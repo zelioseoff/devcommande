@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Devcommandes - Accueil</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-2xl z-50 border-b border-purple-500/20">
+
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <!-- LOGO -->
+      <div class="flex items-center gap-3">
+
+        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-purple-500/50">
+          DC
+        </div>
+
+        <div class="logo">
+          Devcommandes
+        </div>
+
+      </div>
+
+      <!-- MENU DESKTOP -->
+      <div class="hidden md:flex items-center gap-8 text-lg font-medium">
+
+        <a href="index.html" class="nav-link active">
+          Accueil
+        </a>
+
+        <a href="../site web/frontend/services.html" class="nav-link">
+          Services
+        </a>
+
+        <a href="../site web/frontend/bot-discord.html" class="nav-link">
+          Bot Discord
+        </a>
+
+        <a href="../site web/frontend/site-web.html" class="nav-link">
+          Site Web
+        </a>
+
+        <a href="../site web/frontend/portfolio.html" class="nav-link">
+          Portfolio
+        </a>
+
+        <a href="../site web/frontend/contact.html" class="nav-link">
+          Contact
+        </a>
+
+      </div>
+
+      <!-- BOUTON -->
+      <a href="../site web/frontend/contact.html"
+         class="hidden md:flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-600 px-7 py-3 rounded-2xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/20">
+
+        Commencer un projet
+
+      </a>
+
+      <!-- HAMBURGER -->
+      <button id="hamburger"
+              class="md:hidden text-3xl text-white">
+
+        <i class="fas fa-bars"></i>
+
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+
+    <div id="mobileMenu"
+         class="hidden md:hidden bg-black/95 backdrop-blur-xl border-t border-purple-500/20 py-6">
+
+      <div class="flex flex-col px-6 space-y-6 text-xl">
+
+        <a href="index.html" class="nav-link-mobile">
+          Accueil
+        </a>
+
+        <a href="../site web/frontend/services.html" class="nav-link-mobile">
+          Services
+        </a>
+
+        <a href="../site web/frontend/bot-discord.html" class="nav-link-mobile">
+          Bot Discord
+        </a>
+
+        <a href="../site web/frontend/site-web.html" class="nav-link-mobile">
+          Site Web
+        </a>
+
+        <a href="../site web/frontend/portfolio.html" class="nav-link-mobile">
+          Portfolio
+        </a>
+
+        <a href="../site web/frontend/contact.html" class="nav-link-mobile">
+          Contact
+        </a>
+
+        <a href="../site web/frontend/contact.html"
+           class="bg-gradient-to-r from-purple-600 to-pink-600 text-center py-4 rounded-2xl font-semibold mt-4">
+
+          Commencer un projet
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero-bg min-h-screen flex items-center pt-28">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- TEXTE -->
+
+      <div data-aos="fade-right" class="space-y-8">
+
+        <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full text-sm text-zinc-300">
+
+          <i class="fa-solid fa-bolt text-pink-400"></i>
+
+          Création Premium
+
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+
+          Des bots et sites
+
+          <span class="text-gradient">
+            qui marquent
+          </span>
+
+          les esprits.
+
+        </h1>
+
+        <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl">
+
+          Création premium • Support réactif • Résultats exceptionnels
+
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-5">
+
+          <a href="../site web/frontend/bot-discord.html"
+             class="btn-primary text-lg px-10 py-5">
+
+            Commander un Bot
+
+          </a>
+
+          <a href="../site web/frontend/site-web.html"
+             class="border border-white/30 hover:border-purple-400 hover:bg-white/5 transition-all px-10 py-5 rounded-3xl text-lg text-center">
+
+            Commander un Site
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGE -->
+
+      <div data-aos="fade-left">
+
+        <img
+          src="https://picsum.photos/820/780"
+          class="rounded-[32px] shadow-2xl shadow-purple-600/40 hover:scale-[1.02] transition-all duration-500"
+          alt="Hero">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="bg-black py-16 border-t border-purple-500/20">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <div class="logo text-4xl mb-6">
+
+        Devcommandes
+
+      </div>
+
+      <p class="text-zinc-400">
+
+        Création de bots Discord et sites web premium.
+
+      </p>
+
+      <p class="mt-10 text-zinc-500">
+
+        © 2026 ForgeBot - Tous droits réservés
+
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000
+    });
+  </script>
+
+  <!-- JS -->
+  <script src="../js/script.js"></script>
+
+</body>
+</html>
